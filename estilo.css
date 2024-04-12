@@ -1,17 +1,37 @@
+:root{
+    --cor-de-fundo: #1e1e1e;
+    --verde:#6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3a375e;
+    --botao-inativo: rgba(58,55,94,0.5);
+    --texto-fundo: rgba(58,55,94,0.3);
+}
+
 .butano1{
     background-color: green;
-    color: white;
+ 
     }
 
 .butano2{
     background-color: blue;
-    color: white;
+ 
 }
 .butano3{
     background-color: purple;
-    color: white;
+
 }
 .butano4{
     background-color: hotpink;
-    color: white;
+
 }
+
+.corintios {
+    width: 200px;
+}
+
+*{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+}
+
+

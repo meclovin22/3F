@@ -7,22 +7,18 @@
     --texto-fundo: rgba(58,55,94,0.3);
 }
 
-.butano1{
-    background-color: green;
- 
-    }
-
-.butano2{
-    background-color: blue;
- 
-}
-.butano3{
-    background-color: purple;
-
-}
-.butano4{
-    background-color: hotpink;
-
+.butano{
+    color: rgb(255, 255, 255);
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 1em;
+font-size: 18px;
+width: 100%;
+border-bottom: 4px solid var(--botao-ativo);
+border-left: 2px solid var(--botao-ativo);
+border-right: 2px solid var(--botao-ativo);
+background-color: red;
 }
 
 .corintios {
@@ -44,4 +40,27 @@ span {
 flex-direction: column;
 justify-content: center;
 align-items: center;
+}
+
+
+.butano:first-child{
+border-radius: 20px 20px 0 0;
+
+}
+
+.butano:last-child{
+    border-radius: 0 0 20px 20px;
+}
+
+@media screen and (min-width: 700px){
+    .butano{
+        display: block;
+    }
+
+    .butano:last-child{
+        border-radius: 0 20px 20px 0;
+    }
+    .butano:first-child{
+        border-radius: 20px 0 0 20px;
+    }
 }

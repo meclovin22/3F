@@ -1,66 +1,66 @@
-:root{
-    --cor-de-fundo: #1e1e1e;
-    --verde:#6FFF57;
-    --branco: #FFFFFF;
-    --botao-ativo: #3a375e;
-    --botao-inativo: rgba(58,55,94,0.5);
-    --texto-fundo: rgba(58,55,94,0.3);
-}
+    :root{
+        --cor-de-fundo: #1e1e1e;
+        --verde:#6FFF57;
+        --branco: #FFFFFF;
+        --botao-ativo: #3a375e;
+        --botao-inativo: rgba(58,55,94,0.5);
+        --texto-fundo: rgba(58,55,94,0.3);
+    }
 
-.butano{
-    color: rgb(255, 255, 255);
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 1em;
-font-size: 18px;
-width: 100%;
-border-bottom: 4px solid var(--botao-ativo);
-border-left: 2px solid var(--botao-ativo);
-border-right: 2px solid var(--botao-ativo);
-background-color: red;
-}
-
-.corintios {
-    width: 200px;
-}
-
-*{
-    background-color: var(--cor-de-fundo);
-    color: var(--branco);
-}
-
-span {
-    color: var(--verde)
-}
-
-
-.gaucho{
-    display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
-
-.butano:first-child{
-border-radius: 20px 20px 0 0;
-
-}
-
-.butano:last-child{
-    border-radius: 0 0 20px 20px;
-}
-
-@media screen and (min-width: 700px){
     .butano{
-        display: block;
+        color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    font-size: 18px;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    background-color: red;
+    }
+
+    .corintios {
+        width: 200px;
+    }
+
+    *{
+        background-color: var(--cor-de-fundo);
+        color: var(--branco);
+    }
+
+    span {
+        color: var(--verde)
+    }
+
+
+    .gaucho{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+    .butano:first-child{
+    border-radius: 20px 20px 0 0;
+
     }
 
     .butano:last-child{
-        border-radius: 0 20px 20px 0;
+        border-radius: 0 0 20px 20px;
     }
-    .butano:first-child{
-        border-radius: 20px 0 0 20px;
+
+    @media screen and (min-width: 700px){
+        .separa{
+            display: flex;
+        }
+
+        .butano:last-child{
+            border-radius: 0 20px 20px 0;
+        }
+        .butano:first-child{
+            border-radius: 20px 0 0 20px;
+        }
     }
-}

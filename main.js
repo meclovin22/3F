@@ -1,6 +1,8 @@
 const botoes = document.querySelectorAll(".botao");
 const textos = document.querySelectorAll(".aba-conteudo");
 
+
+
 for (let i = 0; i < botoes.length; i++) {
     botoes[i].onclick = function () {
 
@@ -42,9 +44,9 @@ function calculaTempo(tempoObjetivo) {
 }
 
 function atualizaCronometro(){
-       
+       document.getElementById("dias0").textContent=calculaTempo(tempos[0]);
     for (let i=0; i<contadores.length;i++){
-        contadores[i].textContent = calculaTempo(tempos[i]);  
+       // contadores[i].textContent = calculaTempo(tempos[i]);  
     }
 }
 
